@@ -28,8 +28,6 @@ public class Language extends AppCompatActivity {
                 Intent height_th = new Intent(getApplicationContext(), height_th.class);
                 startActivity(height_th);
                 onChange();
-
-                
             }
         });
 
@@ -46,8 +44,8 @@ public class Language extends AppCompatActivity {
 
     public void onChange() {
         soundChooseLang.stop();
-        soundChooseLang.release();
-        soundChooseLang = null;
+        //soundChooseLang.release();
+        //soundChooseLang = null;
     }
 
     public void onDestroy() {
