@@ -27,8 +27,7 @@ public class Item extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
-        //TextView titleItem = (TextView)findViewById(R.id.item);
-        //titleItem.setText("Title");
+
         ImageView setting = (ImageView)findViewById(R.id.settingButton);
         ListView listView1 = (ListView)findViewById(R.id.listView1);
 
@@ -43,40 +42,19 @@ public class Item extends AppCompatActivity {
         String[] myItem = new String[]{
                 "bed","tv","chair","lecture chair","projector","projector screen"
         };
-        /*String[] myItem = {
-                "bed","tv","chair","lecture chair","projector","projector screen"
-        };
-        ListView list = (ListView)findViewById(R.id.myList);
-        CustomListAdapter listAdapter = new CustomListAdapter(this,R.layout.custom_list,R.id.item_name,myItem);
-        list.setAdapter(listAdapter);*/
-        //itemListMenu();
+
 
         ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
 
-        //CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list,R.id.textView1, myItem);
-        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, myItem);
-        //listView1.setAdapter();
-        listView1.setAdapter(customListAdapter);
-        //listView1.setAdapter(mAdapter);
 
-        ///iiiiii
+        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, myItem);
+
+        listView1.setAdapter(customListAdapter);
+
 
     }
 
-    //@Override
-    /*protected void itemListMenu(){
-        String[] myItem = {
-                "bed","tv","chair","lecture chair","projector","projector screen"
-        };
 
-        //CustomListAdapter listAdapter = new CustomListAdapter(this , R.layout.customList , myItem);
-        //list.setAdapter(listAdapter);
-        //ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,myItem);
-
-
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(this,R.layout.custom_list,R.id.item_name,myItem);
-        setListAdapter(myAdapter);
-    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
