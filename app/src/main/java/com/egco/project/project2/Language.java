@@ -28,6 +28,7 @@ public class Language extends AppCompatActivity {
                 Intent height_th = new Intent(getApplicationContext(), height_th.class);
                 startActivity(height_th);
                 onChange();
+
                 
             }
         });
