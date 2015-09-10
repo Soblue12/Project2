@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.egco.project.project2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/myStyle" >
+        <activity
+            android:name=".Language"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Height"
+            android:label="@string/title_activity_height" >
+        </activity>
+        <activity
+            android:name=".Item"
+            android:label="@string/title_activity_item" >
+        </activity>
+        <activity
+            android:name=".Setting"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".Edit"
+            android:label="@string/title_activity_edit" >
+        </activity>
+        <activity
+            android:name=".height_th"
+            android:label="@string/title_activity_height_th" >
+        </activity>
+        <activity
+            android:name=".Item_th"
+            android:label="@string/title_activity_item_th" >
+        </activity>
+        <activity
+            android:name=".Setting_th"
+            android:label="@string/title_activity_setting_th" >
+        </activity>
+        <activity
+            android:name=".Edit_th"
+            android:label="@string/title_activity_edit_th" >
+        </activity>
+    </application>
+
+</manifest>

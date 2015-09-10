@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.egco.project.project2.Edit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="USER01"
+        android:id="@+id/nameThText"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="NAME"
+        android:id="@+id/nameText"
+        android:textSize="40dp"
+        android:layout_below="@+id/nameThText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_below="@+id/nameText"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="HEIGHT"
+        android:id="@+id/heightText"
+        android:textSize="40dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editHeight"
+        android:textSize="40dp"
+        android:layout_below="@+id/heightText"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:text="THAI"
+        android:id="@+id/thButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/editHeight" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:text="ENGLISH"
+        android:id="@+id/enButton"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/thButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

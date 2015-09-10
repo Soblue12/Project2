@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.egco.project.project2.Setting_th">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/textView5"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="ผู้ใช้"
+        android:paddingTop="5dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/addThBut"
+        android:src="@drawable/add_icon"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="เพิ่มผู้ใช้" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="ผู้ใช้01"
+        android:id="@+id/user1ThBut"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="แก้ไข"
+        android:id="@+id/edit1ThBut"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/user1ThBut"
+        android:layout_alignRight="@+id/addThBut"
+        android:layout_alignEnd="@+id/addThBut" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="ผู้ใช้02"
+        android:id="@+id/user2ThBut"
+        android:textSize="30dp"
+        android:layout_below="@+id/user1ThBut"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="แก้ไข"
+        android:id="@+id/edit2ThBut"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/user2ThBut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="ผู้ใช้03"
+        android:id="@+id/user3ThBut"
+        android:textSize="30dp"
+        android:layout_below="@+id/user2ThBut"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="แก้ไข"
+        android:id="@+id/edit3ThBut"
+        android:textSize="30dp"
+        android:layout_below="@+id/edit2ThBut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
