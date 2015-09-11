@@ -32,12 +32,12 @@ public class Item_th extends AppCompatActivity {
                 "เตียง","โทรทัศน์","เก้าอี้","เก้าอี้เลคเชอร์","โปรเจคเตอร์","จอโปรเจคเตอร์"
         };
 
-        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
+       // ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
 
-        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, myItem);
+       // CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, items);
         //listView1.setAdapter();
 
-        listViewTh.setAdapter(customListAdapter);
+        //listViewTh.setAdapter(customListAdapter);
     }
 
     @Override

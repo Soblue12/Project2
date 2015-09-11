@@ -17,19 +17,9 @@ public class CustomListAdapter extends BaseAdapter {
 
     private Context mContext;
     private int id;
-    private String[] items ;
+    private ArrayList<String> items ;
 
-    //TextView text = (TextView)findViewById(R.id.textView1);
-
-    /*public CustomListAdapter(Context context, int textViewResourceId , List<String> list )
-    {
-        super(context, textViewResourceId, list);
-        mContext = context;
-        id = textViewResourceId;
-        items = list ;
-    }*/
-
-    public CustomListAdapter(Context mContext, int id, String[] items) {
+    public CustomListAdapter(Context mContext, int id, ArrayList<String> items) {
         this.mContext = mContext;
         this.id = id;
         this.items = items;
@@ -37,7 +27,7 @@ public class CustomListAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return items.length;
+        return items.size();
     }
 
     @Override
@@ -62,19 +52,10 @@ public class CustomListAdapter extends BaseAdapter {
         }
 
         TextView text = (TextView) mView.findViewById(R.id.textView1);
-        //TextView text = (TextView)(R.id.textView1);
-
-        //if(items.get(position) != null )
 
         if(text != null)
         {
-
-            //text.setTextColor(Color.WHITE);
-            text.setText(items[position]);
-            //text.setBackgroundColor(Color.RED);
-            //int color = Color.argb( 200, 255, 64, 64 );
-            //text.setBackgroundColor( color );
-
+            text.setText(items.get(position));
         }
 
         return mView;

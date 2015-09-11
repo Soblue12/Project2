@@ -1,9 +1,11 @@
 package com.egco.project.project2;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,15 +20,32 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Item extends AppCompatActivity {
+
+    private Cursor items;
+    private DatabaseAssetHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
+        db = new DatabaseAssetHelper(this);
+        items = db.getItem();
+        if(items.getCount()==0){
+            showMessage("no","no data");
+            return;
+        }
+
+        ArrayList<String> list = new ArrayList<String>();
+
+        while(!items.isAfterLast()){
+            list.add(items.getString(1));
+            items.moveToNext();
+        }
 
         ImageView setting = (ImageView)findViewById(R.id.settingButton);
         ListView listView1 = (ListView)findViewById(R.id.listView1);
@@ -39,22 +58,19 @@ public class Item extends AppCompatActivity {
             }
         });
 
-        String[] myItem = new String[]{
+       /* String[] myItem = new String[]{
                 "bed","tv","chair","lecture chair","projector","projector screen"
         };
+*/
+        //ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
 
 
-        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
-
-
-        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, myItem);
-
+        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, list);
         listView1.setAdapter(customListAdapter);
-
 
     }
 
-    //test comment
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -76,6 +92,15 @@ public class Item extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void showMessage(String title,String message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
+
     }
 }
 
