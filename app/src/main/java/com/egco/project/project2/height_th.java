@@ -19,7 +19,7 @@ public class height_th extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Item_th = new Intent(getApplicationContext(), Item_th.class);
+                Intent Item_th = new Intent(getApplicationContext(), NFCActivity.class);
                 startActivity(Item_th);
             }
         });

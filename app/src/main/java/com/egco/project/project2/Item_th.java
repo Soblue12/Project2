@@ -1,6 +1,8 @@
 package com.egco.project.project2;
 
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +12,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 public class Item_th extends AppCompatActivity {
+
+    private Cursor items;
+    private DatabaseAssetHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +27,20 @@ public class Item_th extends AppCompatActivity {
         ImageView setting = (ImageView)findViewById(R.id.settingThBut);
         ListView listViewTh = (ListView)findViewById(R.id.listViewTh);
 
+        db = new DatabaseAssetHelper(this);
+        items = db.getItem();
+        if(items.getCount()==0){
+            showMessage("no","no data");
+            return;
+        }
+
+        ArrayList<String> list = new ArrayList<String>();
+
+        while(!items.isAfterLast()){
+            list.add(items.getString(1));
+            items.moveToNext();
+        }
+
         setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,16 +49,10 @@ public class Item_th extends AppCompatActivity {
             }
         });
 
-        String[] myItem = new String[]{
-                "เตียง","โทรทัศน์","เก้าอี้","เก้าอี้เลคเชอร์","โปรเจคเตอร์","จอโปรเจคเตอร์"
-        };
 
-       // ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
 
-       // CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, items);
-        //listView1.setAdapter();
-
-        //listViewTh.setAdapter(customListAdapter);
+        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, list);
+        listViewTh.setAdapter(customListAdapter);
     }
 
     @Override
@@ -60,5 +75,14 @@ public class Item_th extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void showMessage(String title,String message){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
+
     }
 }

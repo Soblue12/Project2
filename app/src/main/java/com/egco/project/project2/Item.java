@@ -22,22 +22,15 @@ import java.util.List;
 
 public class Item extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
+        ListView listView1 = (ListView)findViewById(R.id.listViewTh);
 
-        ImageView setting = (ImageView)findViewById(R.id.settingButton);
-        ListView listView1 = (ListView)findViewById(R.id.listView1);
 
-        setting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Setting_in = new Intent(getApplicationContext(),Setting.class);
-                startActivity(Setting_in);
-            }
-        });
 
         String[] myItem = new String[]{
                 "bed","tv","chair","lecture chair","projector","projector screen"
@@ -47,9 +40,9 @@ public class Item extends AppCompatActivity {
         ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
 
 
-        CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, myItem);
+        //CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, myItem);
 
-        listView1.setAdapter(customListAdapter);
+       // listView1.setAdapter(customListAdapter);
 
 
     }

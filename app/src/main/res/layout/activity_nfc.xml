@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="48dp"
         android:minHeight="200dp"
         android:minWidth="200dp"
         android:nestedScrollingEnabled="true"
@@ -28,4 +28,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
         android:textSize="23dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="เพื่ออ่านข้อมูลสิ่งอำนวยความสะดวก"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"/>
 </RelativeLayout>
