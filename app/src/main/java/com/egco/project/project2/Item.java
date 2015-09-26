@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.nfc.NfcAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,12 +29,27 @@ public class Item extends AppCompatActivity {
 
     private Cursor items;
     private DatabaseAssetHelper db;
+    private NfcAdapter mNfcAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item);
 
+        //nfc
+        mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
+        if (mNfcAdapter == null) {
+        // Stop here, we definitely need NFC
+        Toast.makeText(this, "This device doesn't support NFC.", Toast.LENGTH_LONG).show();
+        finish();
+        return;
+
+    }
+        handleIntent(getIntent());
+
+
+
+        //end nfc
         db = new DatabaseAssetHelper(this);
         items = db.getItem();
         if(items.getCount()==0){
@@ -58,19 +75,15 @@ public class Item extends AppCompatActivity {
             }
         });
 
-       /* String[] myItem = new String[]{
-                "bed","tv","chair","lecture chair","projector","projector screen"
-        };
-*/
-        //ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, R.layout.custom_list, myItem);
-
 
         CustomListAdapter customListAdapter = new CustomListAdapter(this, R.layout.custom_list, list);
         listView1.setAdapter(customListAdapter);
 
     }
 
-
+    private void handleIntent(Intent intent) {
+        // TODO: handle Intent
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

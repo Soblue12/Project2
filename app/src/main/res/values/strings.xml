@@ -10,4 +10,7 @@
     <string name="title_activity_item_th">สิ่งอำนวยความสะดวก</string>
     <string name="title_activity_setting_th">ตั้งค่า</string>
     <string name="title_activity_edit_th">แก้ไข</string>
+    <string name="title_activity_nfc">NFCActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
