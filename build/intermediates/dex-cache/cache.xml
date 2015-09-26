@@ -2,11 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Bream\.gradle\caches\modules-2\files-2.1\com.readystatesoftware.sqliteasset\sqliteassethelper\2.0.1\d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f\sqliteassethelper-2.0.1.jar"
+        jar="H:\Project\Project2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="d5f02e4a4d65ec0fbb339f2e4228723d1540bb9f">
-        <dex dex="C:\Users\Bream\AndroidStudioProjects\Project2\app\build\intermediates\pre-dexed\debug\sqliteassethelper-2.0.1-469676cbd9c22565aaea9e0a8da6c64729dac5bf.jar" />
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="H:\Project\Project2\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-6d7f084f01b4051eedf0bc435bd6aac78e53ef74.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="H:\Project\Project2\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-08b16856724fa3fb4e27eb337c3e2a21cf114629.jar" />
+    </item>
+    <item
+        jar="H:\Project\Project2\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="H:\Project\Project2\app\build\intermediates\pre-dexed\debug\classes-003ab9e41571e951f41f54a2f6c5e38a87656ca8.jar" />
+    </item>
+    <item
+        jar="H:\Project\Project2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="H:\Project\Project2\app\build\intermediates\pre-dexed\debug\classes-7ed839c1769fe1f5c7ae50c75186ff15c6c56a2b.jar" />
     </item>
 
 </items>
