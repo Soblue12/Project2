@@ -28,16 +28,16 @@ public class Item extends AppCompatActivity {
         setContentView(R.layout.activity_item);
 
 
-        ImageView setting = (ImageView)findViewById(R.id.settingButton);
+        //ImageView setting = (ImageView)findViewById(R.id.settingButton);
         ListView listView1 = (ListView)findViewById(R.id.listView1);
 
-        setting.setOnClickListener(new View.OnClickListener() {
+        /*setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent Setting_in = new Intent(getApplicationContext(),Setting.class);
                 startActivity(Setting_in);
             }
-        });
+        });*/
 
         String[] myItem = new String[]{
                 "bed","tv","chair","lecture chair","projector","projector screen"
@@ -76,6 +76,11 @@ public class Item extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void openSettingPage(MenuItem item)  {
+        Intent set_in = new Intent(getApplication(),Setting.class);
+        startActivity(set_in);
     }
 }
 
