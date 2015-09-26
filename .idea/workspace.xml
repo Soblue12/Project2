@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="89547942-2d7d-4105-84a3-35502d69e15f" name="Default" comment="" />
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/master
     <list default="true" id="42abc4fa-4a22-4311-9f06-966d269b080c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
@@ -16,6 +19,9 @@
 =======
     <list default="true" id="ed873b4a-5310-4307-b74d-62e0c6a3de4d" name="Default" comment="" />
 >>>>>>> origin/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
     <ignored path="Project2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,9 +63,12 @@
       <file leaf-file-name="Language.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Language.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state vertical-scroll-proportion="0.39464286">
               <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
 =======
+=======
+>>>>>>> origin/master
 <<<<<<< HEAD
             <state vertical-scroll-proportion="0.0">
               <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
@@ -67,6 +76,9 @@
             <state vertical-scroll-proportion="0.425">
               <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
 >>>>>>> origin/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
               <folding />
             </state>
@@ -1547,11 +1559,32 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="AndroidView">
 =======
 <<<<<<< HEAD
       <pane id="AndroidView">
+=======
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project2" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> origin/master
+      <pane id="ProjectPane">
+>>>>>>> origin/master
         <subPane>
           <PATH>
             <PATH_ELEMENT>
@@ -1615,9 +1648,12 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 >>>>>>> origin/master
@@ -1789,9 +1825,12 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/master
     <frame x="0" y="0" width="1366" height="738" extended-state="1" />
     <editor active="false" />
 =======
@@ -1873,12 +1912,15 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Height.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/master
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -1886,14 +1928,20 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
           <folding />
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Language.java">
 =======
+=======
+>>>>>>> origin/master
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Item.java">
 >>>>>>> origin/master
       <provider selected="true" editor-type-id="text-editor">
@@ -1903,6 +1951,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Edit.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1924,6 +1973,8 @@
         <state vertical-scroll-proportion="0.39464286">
           <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
 =======
+=======
+>>>>>>> origin/master
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Item_th.java">
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/egco/project/project2/Item.java">
@@ -1944,6 +1995,9 @@
         <state vertical-scroll-proportion="0.425">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
 >>>>>>> origin/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
           <folding />
         </state>
